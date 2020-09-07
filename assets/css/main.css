@@ -1,0 +1,321 @@
+/*General*/
+@font-face {
+  font-family: "CaviarDreams";
+  src: url("../fonts/CaviarDreams.ttf");
+}
+@font-face {
+  font-family: "Stanberry";
+  src: url("../fonts/Stanberry.ttf");
+}
+
+/*General styles*/
+body {
+  box-sizing: border-box;
+}
+.d-none {
+  display: none !important;
+}
+main {
+  display: flex !important;
+  font-family: "Stanberry";
+  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*Nav styles*/
+header {
+  background: #181818;
+  height: 100%;
+  width: 100px;
+}
+.r-nav {
+  background-color: #181818;
+  display: flex;
+  flex-direction: column;
+  font-family: "Stanberry";
+  height: 60px;
+  transition: all 0.5s;
+  width: 100%;
+}
+.r-nav--active {
+  height: 100vh;
+}
+.r-nav__header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+.r-nav__logo {
+  color: white;
+  font-size: 35px;
+  padding: 0 16px;
+}
+.hamburger {
+  outline: none;
+}
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  background-color: white !important;
+}
+.r-nav__links {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+}
+.r-nav__link {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  fill: white;
+}
+.r-nav__link svg {
+  margin: 0 1rem;
+}
+.r_nav__icon {
+  height: 30px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.nav .nav__ly-logo {
+  align-items: center;
+  color: white;
+  display: flex;
+  font-family: "Stanberry";
+  font-size: 45px;
+  height: 100px;
+  justify-content: center;
+  width: 100%;
+}
+.nav .nav__logo {
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 10px;
+}
+.nav .nav__links {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+}
+.nav .nav__link {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+.nav .nav__link .reference {
+  background: #181818;
+  color: white;
+  font-size: 18px;
+  left: 100%;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  transition: all 0.2s;
+  width: 0;
+  z-index: 2;
+}
+.nav .nav__link .reference-active {
+  padding: 1rem 2rem;
+  width: auto;
+}
+
+.nav .nav__links .link {
+  cursor: pointer;
+  height: 50px;
+  margin: 2rem 0;
+  width: 50px;
+}
+.nav .nav__links .link-active {
+  fill: #fff757 !important;
+}
+.nav .nav__links svg {
+  fill: white;
+}
+.nav .nav__links svg:hover {
+  fill: #fff757;
+}
+
+/*Section info*/
+.info {
+  background-color: #1d1d1d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  position: relative;
+  width: 500px;
+}
+.info__welcome {
+  font-family: "Stanberry";
+  font-size: 20px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+.info__contacto {
+  align-self: center;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  background-color: transparent;
+  border: 1px solid white;
+  bottom: 100px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0.7rem 2rem;
+  position: absolute;
+}
+.info__title {
+  display: flex;
+  font-family: "CaviarDreams";
+  font-size: 64px;
+  margin: 0;
+  padding-left: 3rem;
+}
+.info__title span {
+  margin: 2px;
+}
+.info__subtitle {
+  font-family: "CaviarDreams";
+  font-size: 24px;
+  margin: 0;
+  padding-left: 3rem;
+  text-transform: uppercase;
+}
+
+/*Section with focus*/
+#ly-idea {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  position: relative;
+}
+#ly-idea #ly-svg {
+  align-items: center;
+  display: flex;
+  flex: 1;
+}
+.light {
+  border-radius: 50%;
+  box-shadow: 8px 0px 79px 0px rgba(255, 255, 255, 1);
+  padding: 5rem;
+}
+.light__lantern {
+  width: 500px;
+}
+.light__buttons {
+  border-radius: 3rem;
+  border: 1px solid #cccccc;
+  box-shadow: -11px 11px 33px 0px rgba(238, 238, 238, 1);
+  display: flex;
+  height: 50px;
+  margin: 2rem 0;
+  width: 150px;
+}
+.light__button {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  width: 50%;
+  font-size: 18px;
+  justify-content: center;
+}
+.light__button:hover {
+  font-size: 20px;
+}
+.light__button-on {
+  background-color: white;
+  border-radius: 3rem 0 0 3rem;
+  color: black;
+}
+.light__button-off {
+  background-color: black;
+  border-radius: 0 3rem 3rem 0;
+  color: white;
+}
+
+/*Animations*/
+@-webkit-keyframes side-in {
+  0% {
+    transform: translateY(1000px);
+  }
+  30% {
+    transform: translateY(-70px);
+  }
+  90% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes side-in {
+  0% {
+    transform: translateY(1000px);
+  }
+  30% {
+    transform: translateY(-70px);
+  }
+  90% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes btn-active {
+  0% {
+    border-bottom: 1px solid white;
+  }
+  25% {
+    border-left: 1px solid #fff757;
+  }
+  50% {
+    border-bottom: 1px solid #fff757;
+  }
+  75% {
+    border-right: 1px solid #fff757;
+  }
+  100% {
+    border: 1px solid #fff757;
+  }
+}
+@keyframes btn-active {
+  0% {
+    border-bottom: 1px solid white;
+  }
+  25% {
+    border-left: 1px solid #fff757;
+  }
+  50% {
+    border-bottom: 1px solid #fff757;
+  }
+  75% {
+    border-right: 1px solid #fff757;
+  }
+  100% {
+    border: 1px solid #fff757;
+  }
+}
