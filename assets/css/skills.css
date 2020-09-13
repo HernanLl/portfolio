@@ -3,15 +3,16 @@
 }
 #ly-skills {
   position: relative;
+  right: 0;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: calc(100vw - 100px);
 }
 #ly-skills #title {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50px;
+  height: 100px;
   width: 100%;
   font-size: 32px;
   font-family: "CaviarDreams";
@@ -29,8 +30,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 500px;
-  height: 500px;
+  width: 350px;
+  height: 350px;
   margin: 0 3rem;
   border: 1px solid #ccc;
   border-radius: 50%;
@@ -54,13 +55,14 @@
   object-fit: cover;
 }
 
+#skills-graph {
+  display: flex;
+}
 #skills-graph #info {
-  width: 300px;
-  height: calc(100vh - 50px);
+  margin: 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 #skills-graph #info #card {

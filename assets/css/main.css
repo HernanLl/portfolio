@@ -7,20 +7,36 @@
   font-family: "Stanberry";
   src: url("../fonts/Stanberry.ttf");
 }
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
 
 /*General styles*/
+* {
+  font-family: "Roboto";
+}
 body {
   box-sizing: border-box;
 }
 .d-none {
   display: none !important;
 }
+.d-flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+a {
+  color: #1fa3db;
+}
+a:hover {
+  opacity: 0.5;
+}
+.mr-1 {
+  margin-right: 16px;
+}
 main {
   display: flex !important;
-  font-family: "Stanberry";
-  height: 100vh;
   min-height: 100vh;
-  overflow: hidden;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -33,69 +49,18 @@ header {
   height: 100%;
   width: 100px;
 }
-.r-nav {
-  background-color: #181818;
-  display: flex;
-  flex-direction: column;
-  font-family: "Stanberry";
-  height: 60px;
-  transition: all 0.5s;
-  width: 100%;
-}
-.r-nav--active {
-  height: 100vh;
-}
-.r-nav__header {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-.r-nav__logo {
-  color: white;
-  font-size: 35px;
-  padding: 0 16px;
-}
-.hamburger {
-  outline: none;
-}
-.hamburger-inner,
-.hamburger-inner::before,
-.hamburger-inner::after {
-  background-color: white !important;
-}
-.r-nav__links {
-  color: white;
-  display: flex;
-  flex-direction: column;
-  font-size: 18px;
-  justify-content: space-around;
-  padding: 1rem 2rem;
-}
-.r-nav__link {
-  align-items: center;
-  cursor: pointer;
-  display: flex;
-  fill: white;
-}
-.r-nav__link svg {
-  margin: 0 1rem;
-}
-.r_nav__icon {
-  height: 30px;
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
 .nav {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 100vh;
+  width: 100px;
+  position: fixed;
+  background: #181818;
 }
 .nav .nav__ly-logo {
   align-items: center;
   color: white;
   display: flex;
-  font-family: "Stanberry";
   font-size: 45px;
   height: 100px;
   justify-content: center;
@@ -159,13 +124,13 @@ header {
   color: white;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 100vh;
   justify-content: center;
   position: relative;
   width: 500px;
 }
 .info__welcome {
-  font-family: "Stanberry";
+  font-family: "Roboto";
   font-size: 20px;
   position: absolute;
   text-align: center;
@@ -209,8 +174,18 @@ header {
   display: flex;
   flex-direction: column;
   flex: 1;
-  height: 100%;
+  height: 100vh;
+  overflow: hidden;
   position: relative;
+}
+.ly-idea--active {
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(252, 255, 220, 1) 0%,
+    rgba(255, 254, 128, 1) 100%
+  );
 }
 #ly-idea #ly-svg {
   align-items: center;
@@ -218,8 +193,6 @@ header {
   flex: 1;
 }
 .light {
-  border-radius: 50%;
-  box-shadow: 8px 0px 79px 0px rgba(255, 255, 255, 1);
   padding: 5rem;
 }
 .light__lantern {
@@ -228,7 +201,6 @@ header {
 .light__buttons {
   border-radius: 3rem;
   border: 1px solid #cccccc;
-  box-shadow: -11px 11px 33px 0px rgba(238, 238, 238, 1);
   display: flex;
   height: 50px;
   margin: 2rem 0;
@@ -239,7 +211,7 @@ header {
   cursor: pointer;
   display: flex;
   width: 50%;
-  font-size: 18px;
+  font-weight: bold;
   justify-content: center;
 }
 .light__button:hover {

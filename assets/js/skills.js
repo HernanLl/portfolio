@@ -1,5 +1,5 @@
 let isOpen = false;
-const RADIUS_SPHERE = 250;
+const RADIUS_SPHERE = 175;
 
 function renderSkill(skill) {
   if (!isOpen) {
@@ -56,28 +56,6 @@ function renderSkill(skill) {
 }
 
 window.addEventListener("load", function () {
-  //sections event buttons
-  const graphBtn = document.getElementById("button-graph");
-  const listBtn = document.getElementById("button-list");
-  const graph = document.getElementById("skills-graph");
-  const list = document.getElementById("skills-list");
-  graphBtn.addEventListener("click", () => {
-    graph.classList.remove("d-none");
-    list.classList.add("d-none");
-    graphBtn.style.background = "black";
-    graphBtn.style.color = "white";
-    listBtn.style.background = "white";
-    listBtn.style.color = "black";
-  });
-  listBtn.addEventListener("click", () => {
-    graph.classList.add("d-none");
-    list.classList.remove("d-none");
-    graphBtn.style.background = "white";
-    graphBtn.style.color = "black";
-    listBtn.style.background = "black";
-    listBtn.style.color = "white";
-  });
-
   //skills click events
   const SPHERES = 10;
   for (let i = 0; i < SPHERES; i++) {
@@ -106,5 +84,5 @@ window.addEventListener("load", function () {
       }
     }
     firstRender = false;
-  }, 10);
+  }, 5);
 });

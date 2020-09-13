@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+#ly-experience {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 32px;
+}
+#ly-experience #title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  font-size: 32px;
+  font-family: "CaviarDreams";
+}
+.experience__row {
+  display: grid;
+  padding: 32px 0;
+  font-family: "Roboto";
+}
+.experience__row--p1 {
+  grid-template-columns: 200px 1fr 400px;
+}
+.experience__row--p2 {
+  grid-template-columns: 400px 1fr;
+}
+.experience__row--p3 {
+  grid-template-columns: 200px 1fr 400px;
+}
+.experience__info {
+  flex: 1;
+}
+.experience__info h2 {
+  font-size: 30px;
+  margin: 0;
+  font-weight: 300;
+}
+.experience__img--mobile {
+  justify-self: center;
+  max-width: 100px;
+  height: 200px;
+}
+.experience__img--computer {
+  justify-self: center;
+  max-width: 300px;
+}
+.experience__skill-project {
+  padding: 8px 16px;
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  margin: 0 8px;
+  background: #eee;
+}

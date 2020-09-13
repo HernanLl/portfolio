@@ -4,25 +4,8 @@ window.addEventListener("load", function () {
   const svgContainer = document.getElementById("light");
   const ideaContainer = document.getElementById("ly-idea");
   const ideaLantern = document.getElementById("idea-lantern");
-  const logoContainer = document.getElementById("logo");
   const btnContacto = document.getElementById("contacto");
   const TIME_ANIMATION = 1;
-
-  //navbar animation
-  let isCollapse = false;
-  const btnCollapse = document.getElementById("btnCollapse");
-  const nav = document.getElementById("r-nav");
-  btnCollapse.addEventListener("click", () => {
-    if (isCollapse) {
-      btnCollapse.classList.remove("is-active");
-      isCollapse = !isCollapse;
-      nav.classList.remove("r-nav--active");
-    } else {
-      btnCollapse.classList.add("is-active");
-      isCollapse = !isCollapse;
-      nav.classList.add("r-nav--active");
-    }
-  });
 
   //contact button animation
   btnContacto.addEventListener("mouseover", () => {
@@ -42,8 +25,7 @@ window.addEventListener("load", function () {
     btnOFF.style.background = "white";
     btnOFF.style.color = "black";
     svgContainer.innerHTML = SVGON;
-    ideaContainer.style.background = "#fff757";
-    logoContainer.style.border = "1px solid #fff757";
+    ideaContainer.classList.add("ly-idea--active");
   }, TIME_ANIMATION * 1000);
 
   //buttons click event
@@ -53,8 +35,7 @@ window.addEventListener("load", function () {
     btnOFF.style.background = "white";
     btnOFF.style.color = "black";
     svgContainer.innerHTML = SVGON;
-    ideaContainer.style.background = "#fff757";
-    logoContainer.style.border = "1px solid #fff757";
+    ideaContainer.classList.add("ly-idea--active");
   });
   btnOFF.addEventListener("click", () => {
     btnON.style.background = "white";
@@ -62,7 +43,6 @@ window.addEventListener("load", function () {
     btnOFF.style.background = "black";
     btnOFF.style.color = "white";
     svgContainer.innerHTML = SVGOFF;
-    ideaContainer.style.background = "white";
-    logoContainer.style.border = "1px solid white";
+    ideaContainer.classList.remove("ly-idea--active");
   });
 });
