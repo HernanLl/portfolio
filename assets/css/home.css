@@ -1,0 +1,176 @@
+/*Section info*/
+.info {
+  background-color: #1d1d1d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  position: relative;
+  width: 500px;
+}
+.info a {
+  text-decoration: none;
+}
+.info__welcome {
+  font-family: "Roboto";
+  font-size: 20px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+.info__contacto {
+  align-self: center;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  background-color: transparent;
+  border: 1px solid white;
+  bottom: 100px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 0.7rem 2rem;
+  position: absolute;
+}
+.info__title {
+  display: flex;
+  font-family: "CaviarDreams";
+  font-size: 64px;
+  margin: 0;
+  padding-left: 3rem;
+}
+.info__title span {
+  margin: 2px;
+}
+.info__subtitle {
+  font-family: "CaviarDreams";
+  font-size: 24px;
+  margin: 0;
+  padding-left: 3rem;
+  text-transform: uppercase;
+}
+
+/*Section with focus*/
+#ly-idea {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.ly-idea--active {
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(252, 255, 220, 1) 0%,
+    rgba(255, 254, 128, 1) 100%
+  );
+}
+#ly-idea #ly-svg {
+  align-items: center;
+  display: flex;
+  flex: 1;
+}
+.light {
+  padding: 5rem;
+}
+.light__lantern {
+  width: 500px;
+}
+.light__buttons {
+  border-radius: 3rem;
+  border: 1px solid #cccccc;
+  display: flex;
+  height: 50px;
+  margin: 2rem 0;
+  width: 150px;
+}
+.light__button {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  width: 50%;
+  font-weight: bold;
+  justify-content: center;
+}
+.light__button:hover {
+  font-size: 20px;
+}
+.light__button-on {
+  background-color: white;
+  border-radius: 3rem 0 0 3rem;
+  color: black;
+}
+.light__button-off {
+  background-color: black;
+  border-radius: 0 3rem 3rem 0;
+  color: white;
+}
+
+/*Animations*/
+@-webkit-keyframes side-in {
+  0% {
+    transform: translateY(1000px);
+  }
+  30% {
+    transform: translateY(-70px);
+  }
+  90% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes side-in {
+  0% {
+    transform: translateY(1000px);
+  }
+  30% {
+    transform: translateY(-70px);
+  }
+  90% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes btn-active {
+  0% {
+    border-bottom: 1px solid white;
+  }
+  25% {
+    border-left: 1px solid #fff757;
+  }
+  50% {
+    border-bottom: 1px solid #fff757;
+  }
+  75% {
+    border-right: 1px solid #fff757;
+  }
+  100% {
+    border: 1px solid #fff757;
+  }
+}
+@keyframes btn-active {
+  0% {
+    border-bottom: 1px solid white;
+  }
+  25% {
+    border-left: 1px solid #fff757;
+  }
+  50% {
+    border-bottom: 1px solid #fff757;
+  }
+  75% {
+    border-right: 1px solid #fff757;
+  }
+  100% {
+    border: 1px solid #fff757;
+  }
+}
