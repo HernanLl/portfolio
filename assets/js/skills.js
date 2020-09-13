@@ -8,7 +8,7 @@ function renderSkill(skill) {
     isOpen = true;
   }
   let nameSkill = "";
-  let logoSkill = "/portfolio/assets/skills/";
+  let logoSkill = "/assets/skills/";
   switch (skill) {
     case "css":
       nameSkill = "CSS3";
