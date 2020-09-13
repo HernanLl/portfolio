@@ -25,12 +25,6 @@ body {
 .align-center {
   align-items: center;
 }
-a {
-  color: #1fa3db;
-}
-a:hover {
-  opacity: 0.5;
-}
 .mr-1 {
   margin-right: 16px;
 }
