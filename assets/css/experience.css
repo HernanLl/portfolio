@@ -103,4 +103,7 @@
   .experience__row--p3 .experience__r-visualization {
     display: flex;
   }
+  .experience__skill-project {
+    margin: 8px;
+  }
 }
