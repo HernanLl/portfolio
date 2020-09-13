@@ -12,10 +12,43 @@
   <body>
     <main>
       <header>
+        <nav id="responsive-nav" class="r-nav">
+          <div class="ly-hamburger">
+            <div class="hamburger" onclick="hambugerChange(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </div>
+          <div class="r-nav__item">
+            <a href="/">
+              <img src="../assets/svg/home.svg" alt="" />
+              <p>Inicio</p>
+            </a>
+          </div>
+          <div class="r-nav__item">
+            <a href="./skills">
+              <img src="../assets/svg/skills.svg" alt="" />
+              <p>Habilidades</p>
+            </a>
+          </div>
+          <div class="r-nav__item">
+            <a href="./experience">
+              <img src="../assets/svg/work.svg" alt="" />
+              <p>Experiencia</p>
+            </a>
+          </div>
+          <div class="r-nav__item">
+            <a href="./contact">
+              <img src="../assets/svg/contact.svg" alt="" />
+              <p>Contacto</p>
+            </a>
+          </div>
+        </nav>
         <nav class="nav">
           <div class="nav__ly-logo"></div>
           <div class="nav__links">
-            <a href="/portfolio" class="nav__link">
+            <a href="../" class="nav__link">
               <svg
                 id="home"
                 class="link"
@@ -95,7 +128,7 @@
               </a>
               <div id="link-r2" class="reference">Experiencia</div>
             </div>
-            <a href="./contacto" class="nav__link">
+            <a href="./contact" class="nav__link">
               <svg
                 id="contact"
                 class="link"
@@ -121,10 +154,10 @@
           </div>
         </nav>
       </header>
-      <section id="ly-skills">
-        <div id="title">Habilidades Tecnicas</div>
-        <div id="skills-graph">
-          <div id="ly-big-sphere">
+      <section class="ly-skills">
+        <div class="title">Habilidades Tecnicas</div>
+        <div class="skills-graph">
+          <div class="ly-big-sphere">
             <div class="p-relative">
               <div class="sphere d-none" id="sphere-0" data-value="css">
                 <img
@@ -198,8 +231,8 @@
               </div>
             </div>
           </div>
-          <div id="info">
-            <div id="card">
+          <div class="info">
+            <div id="card" class="card">
               <img id="img-info" class="img" alt="skill css" />
               <div id="name-info"></div>
             </div>

@@ -4,7 +4,7 @@ window.addEventListener("load", function () {
   const svgContainer = document.getElementById("light");
   const ideaContainer = document.getElementById("ly-idea");
   const ideaLantern = document.getElementById("idea-lantern");
-  const btnContacto = document.getElementById("contacto");
+  const btnContacto = document.getElementById("contact");
   const TIME_ANIMATION = 1;
 
   //contact button animation

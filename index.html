@@ -17,6 +17,39 @@
   <body>
     <main id="home">
       <header>
+        <nav id="responsive-nav" class="r-nav">
+          <div class="ly-hamburger">
+            <div class="hamburger" onclick="hambugerChange(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </div>
+          <div class="r-nav__item">
+            <a href="/">
+              <img src="./assets/svg/home.svg" alt="" />
+              <p>Inicio</p>
+            </a>
+          </div>
+          <div class="r-nav__item">
+            <a href="./views/skills">
+              <img src="./assets/svg/skills.svg" alt="" />
+              <p>Habilidades</p>
+            </a>
+          </div>
+          <div class="r-nav__item">
+            <a href="./views/experience">
+              <img src="./assets/svg/work.svg" alt="" />
+              <p>Experiencia</p>
+            </a>
+          </div>
+          <div class="r-nav__item">
+            <a href="./views/contact">
+              <img src="./assets/svg/contact.svg" alt="" />
+              <p>Contacto</p>
+            </a>
+          </div>
+        </nav>
         <nav class="nav">
           <div class="nav__ly-logo"></div>
           <div class="nav__links">
@@ -100,7 +133,7 @@
               </a>
               <div id="link-r2" class="reference">Experiencia</div>
             </div>
-            <a href="./views/contacto" class="nav__link">
+            <a href="./views/contact" class="nav__link">
               <svg
                 id="contact"
                 class="link"
@@ -130,7 +163,7 @@
         <p class="info__welcome">Bienvenido</p>
         <p class="info__title">Hernan Llull</p>
         <p class="info__subtitle">Desarrollador de software</p>
-        <a href="./views/contacto" id="contacto" class="info__contacto"
+        <a href="./views/contact" id="contact" class="info__contact"
           >Contactarme</a
         >
       </section>

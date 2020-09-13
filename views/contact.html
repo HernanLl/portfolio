@@ -5,17 +5,50 @@
     <title>Hernan Llull</title>
     <link rel="stylesheet" href="../assets/css/main.css" />
     <link rel="stylesheet" href="../assets/css/normalize.css" />
-    <link rel="stylesheet" href="../assets/css/contacto.css" />
+    <link rel="stylesheet" href="../assets/css/contact.css" />
     <link rel="icon" type="image/png" href="../favicon.png" />
     <script src="../assets/js/navbar.js"></script>
   </head>
   <body>
     <main>
       <header>
+        <nav id="responsive-nav" class="r-nav">
+          <div class="ly-hamburger">
+            <div class="hamburger" onclick="hambugerChange(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </div>
+          <div class="r-nav__item">
+            <a href="/">
+              <img src="../assets/svg/home.svg" alt="" />
+              <p>Inicio</p>
+            </a>
+          </div>
+          <div class="r-nav__item">
+            <a href="./skills">
+              <img src="../assets/svg/skills.svg" alt="" />
+              <p>Habilidades</p>
+            </a>
+          </div>
+          <div class="r-nav__item">
+            <a href="./experience">
+              <img src="../assets/svg/work.svg" alt="" />
+              <p>Experiencia</p>
+            </a>
+          </div>
+          <div class="r-nav__item">
+            <a href="./contact">
+              <img src="../assets/svg/contact.svg" alt="" />
+              <p>Contacto</p>
+            </a>
+          </div>
+        </nav>
         <nav class="nav">
           <div class="nav__ly-logo"></div>
           <div class="nav__links">
-            <a href="/portfolio" class="nav__link">
+            <a href="../" class="nav__link">
               <svg
                 id="home"
                 class="link"
@@ -119,7 +152,7 @@
           </div>
         </nav>
       </header>
-      <section class="ly-contacto">
+      <section class="ly-contact">
         <div class="title">Datos de contacto</div>
         <div class="contact">
           <div class="flex-center">

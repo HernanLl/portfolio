@@ -1,14 +1,14 @@
 .d-none {
   display: none !important;
 }
-#ly-skills {
+.ly-skills {
   position: relative;
   right: 0;
   display: flex;
   flex-direction: column;
   width: calc(100vw - 100px);
 }
-#ly-skills #title {
+.ly-skills .title {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@
   font-size: 32px;
   font-family: "CaviarDreams";
 }
-#ly-skills #skills-graph {
+.ly-skills .skills-graph {
   flex: 1;
   width: 100%;
   height: calc(100vh - 150px);
@@ -25,7 +25,7 @@
   justify-content: center;
   align-items: center;
 }
-#skills-graph #ly-big-sphere {
+.skills-graph .ly-big-sphere {
   position: relative;
   display: flex;
   justify-content: center;
@@ -48,92 +48,34 @@
   border-radius: 50%;
   cursor: pointer;
 }
-
 .sphere img {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
 
-#skills-graph {
-  display: flex;
-}
-#skills-graph #info {
+.skills-graph .info {
   margin: 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-#skills-graph #info #card {
+.skills-graph .info .card {
   display: none;
-  align-items: center;
-  font-size: 20px;
   padding: 16px 2rem;
+  font-size: 20px;
   border: 1px solid #eee;
+  align-items: center;
   box-shadow: 10px 10px 24px 0px rgba(238, 238, 238, 1);
 }
-#skills-graph #info #card img {
+.skills-graph .info .card img {
   height: 75px;
   -o-object-fit: cover;
   object-fit: cover;
   margin: 0 1rem;
 }
 
-#ly-skills #skills-list {
-  flex: 1;
-  width: 100%;
-  min-height: calc(100vh - 150px);
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-#ly-skills #skills-list .card-skill {
-  width: 300px;
-  height: 100px;
-  justify-self: center;
-  margin: 1rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-}
-#ly-skills #skills-list .card-skill img {
-  height: 100px;
-  -o-object-fit: cover;
-  object-fit: cover;
-  margin: 0 1rem;
-}
-
-#ly-skills #buttons {
-  position: relative;
-  bottom: 50px;
-  align-self: center;
-  display: flex;
-  width: 200px;
-  height: 50px;
-  border-radius: 3rem;
-  border: 1px solid #cccccc;
-  box-shadow: -11px 11px 33px 0px rgba(238, 238, 238, 1);
-}
-#ly-skills #buttons .button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-#ly-skills #buttons #button-graph {
-  width: 50%;
-  background-color: black;
-  color: white;
-  border-radius: 3rem 0 0 3rem;
-}
-#ly-skills #buttons #button-list {
-  width: 50%;
-  border-radius: 0 3rem 3rem 0;
-}
-p {
-  margin: 0;
-}
 /*animations*/
 @-webkit-keyframes side-in-right {
   0% {
@@ -149,5 +91,20 @@ p {
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@media (max-width: 1200px) {
+  .ly-skills {
+    width: 100%;
+  }
+  .skills-graph {
+    width: 100%;
+    flex-direction: column;
+    height: auto !important;
+    padding: 32px 0;
+  }
+  .skills-graph .info {
+    margin: 64px 0;
   }
 }

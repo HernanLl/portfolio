@@ -20,7 +20,7 @@
   top: 0;
   width: 100%;
 }
-.info__contacto {
+.info__contact {
   align-self: center;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
@@ -34,7 +34,6 @@
   position: absolute;
 }
 .info__title {
-  display: flex;
   font-family: "CaviarDreams";
   font-size: 64px;
   margin: 0;
@@ -172,5 +171,22 @@
   }
   100% {
     border: 1px solid #fff757;
+  }
+}
+
+@media (max-width: 1200px) {
+  .info {
+    width: 100%;
+  }
+  .info__title {
+    text-align: center;
+    padding: 0;
+  }
+  .info__subtitle {
+    text-align: center;
+    padding: 0;
+  }
+  #ly-idea {
+    display: none !important;
   }
 }
