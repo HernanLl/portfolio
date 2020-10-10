@@ -30,10 +30,14 @@ function renderSkill(skill) {
       nameSkill = "Reactjs";
       logoSkill += "react.svg";
       break;
-    case "spring":
-      nameSkill = "Spring";
-      logoSkill += "spring.png";
+    case "mongodb":
+      nameSkill = "Mongodb";
+      logoSkill += "mongodb.svg";
       break;
+      case "postgresql":
+        nameSkill = "Postgresql";
+        logoSkill += "postgresql.svg";
+        break;
     case "java":
       nameSkill = "Java";
       logoSkill += "java.png";
@@ -50,6 +54,10 @@ function renderSkill(skill) {
       nameSkill = "Webpack";
       logoSkill += "webpack.png";
       break;
+      case "git":
+        nameSkill = "GIT";
+        logoSkill += "git.svg";
+        break;
   }
   document.getElementById("name-info").innerHTML = nameSkill;
   document.getElementById("img-info").src = logoSkill;
@@ -57,7 +65,7 @@ function renderSkill(skill) {
 
 window.addEventListener("load", function () {
   //skills click events
-  const SPHERES = 10;
+  const SPHERES = 12;
   for (let i = 0; i < SPHERES; i++) {
     const skill = document.getElementById("sphere-" + i);
     skill.addEventListener("click", () => {
