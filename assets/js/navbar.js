@@ -8,7 +8,6 @@ window.addEventListener("load", function () {
   for (let i = 0; i < links.length; i++) {
     links[i].addEventListener("mouseenter", () => {
       document.getElementById(`link-r${i}`).classList.add("reference-active");
-      console.log(document.getElementById(`link-r${i}`));
     });
     links[i].addEventListener("mouseleave", () => {
       document
