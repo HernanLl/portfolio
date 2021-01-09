@@ -1,5 +1,5 @@
 let isOpen = false;
-const RADIUS_SPHERE = 175;
+const RADIUS_SPHERE = 200;
 
 function renderSkill(skill) {
   if (!isOpen) {
@@ -34,10 +34,10 @@ function renderSkill(skill) {
       nameSkill = "Mongodb";
       logoSkill += "mongodb.svg";
       break;
-      case "postgresql":
-        nameSkill = "Postgresql";
-        logoSkill += "postgresql.svg";
-        break;
+    case "postgresql":
+      nameSkill = "Postgresql";
+      logoSkill += "postgresql.svg";
+      break;
     case "java":
       nameSkill = "Java";
       logoSkill += "java.png";
@@ -54,10 +54,18 @@ function renderSkill(skill) {
       nameSkill = "Webpack";
       logoSkill += "webpack.png";
       break;
-      case "git":
-        nameSkill = "GIT";
-        logoSkill += "git.svg";
-        break;
+    case "git":
+      nameSkill = "GIT";
+      logoSkill += "git.svg";
+      break;
+    case "angular":
+      nameSkill = "Angular";
+      logoSkill += "angular.png";
+      break;
+    case "flutter":
+      nameSkill = "flutter";
+      logoSkill += "flutter.svg";
+      break;
   }
   document.getElementById("name-info").innerHTML = nameSkill;
   document.getElementById("img-info").src = logoSkill;
@@ -65,7 +73,7 @@ function renderSkill(skill) {
 
 window.addEventListener("load", function () {
   //skills click events
-  const SPHERES = 12;
+  const SPHERES = 14;
   for (let i = 0; i < SPHERES; i++) {
     const skill = document.getElementById("sphere-" + i);
     skill.addEventListener("click", () => {
@@ -83,8 +91,8 @@ window.addEventListener("load", function () {
       let hex = ((deg + i * DIFF) * Math.PI) / 2 / 90;
       const sphere = document.getElementById("sphere-" + i);
       if (sphere) {
-        sphere.style.top = RADIUS_SPHERE * Math.sin(hex) - 37.5;
-        sphere.style.left = RADIUS_SPHERE * Math.cos(hex) - 37.5;
+        sphere.style.top = RADIUS_SPHERE * Math.sin(hex) - 30;
+        sphere.style.left = RADIUS_SPHERE * Math.cos(hex) - 30;
         deg += 0.01;
         if (firstRender) {
           sphere.classList.remove("d-none");
