@@ -20,28 +20,16 @@ window.addEventListener("load", function () {
   ideaLantern.style.animation = `side-in ${TIME_ANIMATION}s`;
   ideaLantern.classList.remove("d-none");
   setTimeout(() => {
-    btnON.style.background = "black";
-    btnON.style.color = "white";
-    btnOFF.style.background = "white";
-    btnOFF.style.color = "black";
     svgContainer.innerHTML = SVGON;
     ideaContainer.classList.add("ly-idea--active");
   }, TIME_ANIMATION * 1000);
 
   //buttons click event
   btnON.addEventListener("click", () => {
-    btnON.style.background = "black";
-    btnON.style.color = "white";
-    btnOFF.style.background = "white";
-    btnOFF.style.color = "black";
     svgContainer.innerHTML = SVGON;
     ideaContainer.classList.add("ly-idea--active");
   });
   btnOFF.addEventListener("click", () => {
-    btnON.style.background = "white";
-    btnON.style.color = "black";
-    btnOFF.style.background = "black";
-    btnOFF.style.color = "white";
     svgContainer.innerHTML = SVGOFF;
     ideaContainer.classList.remove("ly-idea--active");
   });

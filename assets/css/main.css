@@ -187,7 +187,7 @@ header {
 }
 /*end - hamburger styles */
 
-@media (max-width: 1200px) {
+@media (max-width: 966px) {
   main {
     flex-direction: column;
   }

@@ -54,6 +54,10 @@
 }
 
 /*Section with focus*/
+.light {
+  display: flex;
+  justify-content: center;
+}
 #ly-idea {
   align-items: center;
   display: flex;
@@ -65,20 +69,25 @@
 }
 .ly-idea--active {
   background: rgb(2, 0, 36);
-  background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(252, 255, 220, 1) 0%, rgba(255, 254, 128, 1) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(255, 254, 166, 1) 0%,
+    rgba(255, 254, 128, 1) 100%
+  );
 }
 #ly-idea #ly-svg {
-  align-items: center;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex: 1;
 }
-
 .light__lantern {
-  width: 500px;
+  width: 100%;
 }
+
 .light__buttons {
   border-radius: 3rem;
-  border: 1px solid #cccccc;
   display: flex;
   height: 50px;
   margin: 2rem 0;
@@ -92,18 +101,17 @@
   font-weight: bold;
   justify-content: center;
 }
+.light__button img {
+  width: 30px;
+}
 .light__button:hover {
   font-size: 20px;
 }
 .light__button-on {
-  background-color: white;
   border-radius: 3rem 0 0 3rem;
-  color: black;
 }
 .light__button-off {
-  background-color: black;
   border-radius: 0 3rem 3rem 0;
-  color: white;
 }
 
 /*Animations*/
@@ -170,7 +178,7 @@
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 966px) {
   .info {
     width: 100%;
   }
