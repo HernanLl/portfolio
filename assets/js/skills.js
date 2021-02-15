@@ -38,9 +38,9 @@ function renderSkill(skill) {
       nameSkill = "Postgresql";
       logoSkill += "postgresql.svg";
       break;
-    case "java":
-      nameSkill = "Java";
-      logoSkill += "java.png";
+    case "netcore":
+      nameSkill = "ASP.NET Core";
+      logoSkill += "netcore.svg";
       break;
     case "sass":
       nameSkill = "Sass";
